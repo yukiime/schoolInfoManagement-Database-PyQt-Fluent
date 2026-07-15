@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Students_info_Class</class>
+ <widget class="QWidget" name="Students_info_Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>766</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>100</width>
+    <height>35</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>9</number>
+   </property>
+   <item row="16" column="0" colspan="9">
+    <layout class="QVBoxLayout" name="dataTable_Vlayout">
+     <item>
+      <widget class="QLabel" name="resultHint_label">
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>600</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>宋体</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>结果将呈现在下方...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="TableWidget" name="data_tableWidget">
+       <property name="minimumSize">
+        <size>
+         <width>500</width>
+         <height>450</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>6000</width>
+         <height>1500</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="8" column="0">
+    <widget class="QLabel" name="Class_label">
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>班级编号:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="0">
+    <widget class="QLabel" name="Major_label">
+     <property name="minimumSize">
+      <size>
+       <width>90</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>120</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>专业编号:</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="4">
+    <widget class="CheckBox" name="Male_CheckBox">
+     <property name="text">
+      <string>男</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="tristate">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="4">
+    <widget class="CheckBox" name="Female_CheckBox">
+     <property name="text">
+      <string>女</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="6">
+    <widget class="PrimaryPushButton" name="select_pushButton">
+     <property name="minimumSize">
+      <size>
+       <width>120</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>150</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>查询专业</string>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="LineEdit" name="Major_LineEdit">
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="title_label">
+     <property name="minimumSize">
+      <size>
+       <width>320</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>350</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>按专业班级查询学生信息</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="2">
+    <widget class="SwitchButton" name="Class_SwitchButton">
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>不筛选班级</string>
+     </property>
+     <property name="onText">
+      <string>筛选班级</string>
+     </property>
+     <property name="offText">
+      <string>不筛选班级</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1">
+    <widget class="ComboBox" name="Class_ComboBox">
+     <property name="minimumSize">
+      <size>
+       <width>140</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>140</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PrimaryPushButton</class>
+   <extends>PushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SwitchButton</class>
+   <extends>QWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

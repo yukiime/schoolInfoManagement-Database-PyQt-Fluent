@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Inster_students_info</class>
+ <widget class="QWidget" name="Inster_students_info">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>100</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QFormLayout" name="formLayout">
+   <item row="1" column="0">
+    <widget class="QSplitter" name="interface_splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="insert_data_verticalLayout">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QSplitter" name="Sno_splitter">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLabel" name="Sno_label">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>91</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>学号:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="LineEdit" name="Sno_LineEdit">
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Sno_hint_label">
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>700</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>  学号是12位整数，1-4位是学年，5-8位专业编号，9-10是班级编号后两位，11-12位是个人编号</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSplitter" name="Name_splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLabel" name="Name_label">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>91</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>姓名:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="LineEdit" name="Name_LineEdit">
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSplitter" name="Sex_splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLabel" name="Age_label">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>91</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>年龄:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="SpinBox" name="Age_SpinBox">
+          <property name="minimumSize">
+           <size>
+            <width>110</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="value">
+           <number>20</number>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="Sex_label">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>900</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>宋体</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>性别:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="ComboBox" name="Sex_ComboBox">
+             <property name="minimumSize">
+              <size>
+               <width>140</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>140</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>男</string>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSplitter" name="Area_splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLabel" name="Area_label">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>91</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>生源地:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="LineEdit" name="Area_LineEdit">
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Area_hint_label">
+          <property name="minimumSize">
+           <size>
+            <width>410</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>  生源地必须为省级行政区全称，海外填写国家名</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSplitter" name="Cno_splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLabel" name="Class_label">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>91</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>班级编号:</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="LineEdit" name="Class_LineEdit">
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>140</width>
+            <height>35</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Class_hint_label">
+          <property name="minimumSize">
+           <size>
+            <width>260</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>500</width>
+            <height>35</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>宋体</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>  班级编号必须是下列已存在的班级编号</string>
+          </property>
+         </widget>
+         <widget class="PrimaryPushButton" name="insert_pushButton">
+          <property name="minimumSize">
+           <size>
+            <width>120</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>135</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>插入该学生</string>
+          </property>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="horizontal_separator_label">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>2</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>---------------------------------------------------------------------------------------------------------------------------------------------------------</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <layout class="QVBoxLayout" name="table_interface_verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="table_button_horizontalLayout">
+         <item>
+          <widget class="QLabel" name="filled_label_2">
+           <property name="maximumSize">
+            <size>
+             <width>80</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="PrimaryPushButton" name="select_pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>查看专业班级列表</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="ComboBox" name="Major_ComboBox">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Segoe UI</family>
+             <pointsize>-1</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>默认全选</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="filled_label">
+           <property name="maximumSize">
+            <size>
+             <width>360</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="PrimaryPushButton" name="students_select_PushButton">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>查看班级学生列表</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="LineEdit" name="students_Cno_LineEdit">
+           <property name="maximumSize">
+            <size>
+             <width>150</width>
+             <height>35</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="filled_label_3">
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="1" column="0">
+          <widget class="SmoothScrollArea" name="SmoothScrollArea">
+           <property name="minimumSize">
+            <size>
+             <width>500</width>
+             <height>300</height>
+            </size>
+           </property>
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>498</width>
+              <height>405</height>
+             </rect>
+            </property>
+            <widget class="TableWidget" name="data_tableWidget">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>0</y>
+               <width>481</width>
+               <height>380</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>440</width>
+               <height>370</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1500</width>
+               <height>1000</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="SmoothScrollArea" name="SmoothScrollArea_2">
+           <property name="widgetResizable">
+            <bool>true</bool>
+           </property>
+           <widget class="QWidget" name="scrollAreaWidgetContents_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>408</width>
+              <height>405</height>
+             </rect>
+            </property>
+            <widget class="TableWidget" name="students_data_tableWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>10</y>
+               <width>391</width>
+               <height>370</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>380</width>
+               <height>370</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>1500</width>
+               <height>1000</height>
+              </size>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="class_resultHint_label">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>专业班级列表如下</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="students_resultHint_label">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>500</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>班级学生列表如下</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="2">
+    <widget class="QLabel" name="title_label">
+     <property name="minimumSize">
+      <size>
+       <width>320</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>520</width>
+       <height>35</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>宋体</family>
+       <pointsize>18</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>添加学生信息界面</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PrimaryPushButton</class>
+   <extends>PushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SmoothScrollArea</class>
+   <extends>QScrollArea</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>LineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>TableWidget</class>
+   <extends>QTableWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
