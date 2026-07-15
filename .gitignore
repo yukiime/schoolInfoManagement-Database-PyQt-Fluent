@@ -3,3 +3,14 @@
 __pycache__/
 */__pycache__
 *.pyc
+
+# 本地数据库配置（包含真实密码，不提交）
+config.ini
+.env
+
+# 本地虚拟环境与数据库数据文件
+.venv/
+local_db/
+
+# macOS
+.DS_Store
