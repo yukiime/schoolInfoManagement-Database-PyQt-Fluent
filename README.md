@@ -98,6 +98,11 @@ python main.py
 | 专业号 Mno | 4 | `0101` `0102` `0103` |
 | 学级/学年 | 4 | `2021`（学号前四位） |
 
+## 运行示意图
+![img1](exhibit/exhibit_img1.png)
+![img2](exhibit/exhibit_img2.png)
+![img3](exhibit/exhibit_img3.png)
+
 ## 说明
 
 - 示例数据（`sql/02_sample_data.sql`）中的人名、学号、电话均为虚构
