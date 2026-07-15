@@ -1,0 +1,17 @@
+# 本地开发用 MySQL（数据文件保存在项目内 local_db/ 目录，已被 .gitignore 忽略）
+#
+# 首次启动:  docker compose up -d      （自动执行 sql/ 下的建表和示例数据脚本）
+# 停止:      docker compose stop
+# 彻底重置:  docker compose down && rm -rf local_db
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: school-info-mysql
+    ports:
+      - "127.0.0.1:3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-devpass123}
+      MYSQL_DATABASE: school_info_db
+    volumes:
+      - ./local_db/mysql-data:/var/lib/mysql
+      - ./sql:/docker-entrypoint-initdb.d:ro
